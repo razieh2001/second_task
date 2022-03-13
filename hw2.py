@@ -10,14 +10,12 @@ for x in range(0,numbersOfUsers):
 
 nameFinder = input("Enter the name you are looking for:\n")
 
-check = 0
-res = None
+check = False
 for sub in users:
     if sub['name'] == nameFinder:
-        res = sub 
-        check+=1
-        print(res['age'])
+        check=True
+        print(sub['age'])
  
-if check == 0 :
+if check == False :
  print("The name you entered doesnt exist")
 
